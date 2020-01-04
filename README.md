@@ -66,6 +66,7 @@ This is the loss comparison between runs.
 ![tb-comparison](https://github.com/maccarini/pytorch-cnn/blob/master/assets/tb-loss.svg "TensorBoard losses")
 
 Aditionally we compute the confusion matrix and plot it as a heat map to visualize how accurately our network is predicting the classes and most importantly, what classes the network is predicting wrongly.
+
 ![confusion-matrix](https://github.com/maccarini/pytorch-cnn/blob/master/assets/heat-map.png "Confusion Matrix")
 
 As we can see the network predicts accurately most of the time, but sometimes it predicts wrong. Looking at the confusion matrix we can
