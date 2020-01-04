@@ -55,6 +55,7 @@ Additionally, a small grid search is applied to find optimal hyperparameters and
 
 ## Results
 As expected the loss function decreased after being optimized every epoch, we end up with a curve like this one
+
 ![train-loss-curve](https://github.com/maccarini/pytorch-cnn/blob/master/assets/loss_decrease.png "Loss")
 
 After the training process concluded we ended up with 6 diferent combinations of learning rates and batch sizes, which can be visualized in tensorboard running the following command on the command line
@@ -63,6 +64,7 @@ tensorboard --logdir=./data --port=8008
 ```
 There you can see accuracy, loss and val loss comparisons between runs. All of the results were obtain after training for 25 epochs.
 This is the loss comparison between runs.
+
 ![tb-comparison](https://github.com/maccarini/pytorch-cnn/blob/master/assets/tb-loss.svg "TensorBoard losses")
 
 Aditionally we compute the confusion matrix and plot it as a heat map to visualize how accurately our network is predicting the classes and most importantly, what classes the network is predicting wrongly.
