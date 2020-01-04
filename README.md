@@ -60,7 +60,7 @@ As expected the loss function decreased after being optimized every epoch, we en
 
 After the training process concluded we ended up with 6 diferent combinations of learning rates and batch sizes, which can be visualized in tensorboard running the following command on the command line
 ```
-tensorboard --logdir=./data --port=8008
+tensorboard --logdir=./runs --port=8008
 ```
 There you can see accuracy, loss and val loss comparisons between runs. All of the results were obtain after training for 25 epochs.
 This is the loss comparison between runs.
