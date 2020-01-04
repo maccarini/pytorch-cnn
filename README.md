@@ -37,6 +37,7 @@ sample = train_set.data[0]
 plt.imshow(sample)
 ```
 ![sample-data](https://github.com/maccarini/pytorch-cnn/blob/master/assets/sample.png "Sample image")
+
 We can also get its corresponding label
 ```python
 sample_label = train_set.targets[0].item()
@@ -55,6 +56,7 @@ Additionally, a small grid search is applied to find optimal hyperparameters and
 ## Results
 As expected the loss function decreased after being optimized every epoch, we end up with a curve like this one
 ![train-loss-curve](https://github.com/maccarini/pytorch-cnn/blob/master/assets/loss_decrease.png "Loss")
+
 After the training process concluded we ended up with 6 diferent combinations of learning rates and batch sizes, which can be visualized in tensorboard running the following command on the command line
 ```
 tensorboard --logdir=./data --port=8008
@@ -65,5 +67,6 @@ This is the loss comparison between runs.
 
 Aditionally we compute the confusion matrix and plot it as a heat map to visualize how accurately our network is predicting the classes and most importantly, what classes the network is predicting wrongly.
 ![confusion-matrix](https://github.com/maccarini/pytorch-cnn/blob/master/assets/heat-map.png "Confusion Matrix")
+
 As we can see the network predicts accurately most of the time, but sometimes it predicts wrong. Looking at the confusion matrix we can
 see the classes the network predicts wrongly with higher frecuency, for example we can see that the network predicts many times the input to be a shirt when it is actually a t-shirt which is understandable taking in account the similarities between both classes.
